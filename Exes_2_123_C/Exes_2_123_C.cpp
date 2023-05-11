@@ -7,10 +7,10 @@ void binary(int n, int anggi[], int x)
 	int upperbound = n - 1;
 	int mid;
 
-	while (lowerbound <= upperbound){
-		int mid = (lowerbound + upperbound) / 2;
+	while (lowerbound <= upperbound) {
+		mid = (lowerbound + upperbound) / 2;
 
-		if (anggi[mid] == x){
+		if (anggi[mid] == x) {
 			cout << "-----" << endl;
 			cout << "found" << endl;
 			break;
@@ -21,13 +21,13 @@ void binary(int n, int anggi[], int x)
 		else {
 			lowerbound = mid + 1;
 		}
+	}
 
 		if (anggi[mid] != x){
 			cout << "---------" << endl;
 			cout << "not found" << endl;
-			break;
 		}
-	}
+	
 }
 
  
